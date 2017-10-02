@@ -1,0 +1,13 @@
+<div class="likes">
+    <vp-button (click)="onLike()"
+               [className]="'btn btn-like'"
+               [value] = "'🖒'">
+    </vp-button>
+    <vp-button (click)="onDislike()"
+               [className]="'btn btn-like btn-like--decrement'"
+               [value] = "'🖒'">
+
+    </vp-button>
+    <p class="likes__title">likes</p>
+    <div class="likes__text">{{likes}}</div>
+</div>

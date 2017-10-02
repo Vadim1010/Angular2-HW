@@ -1,0 +1,17 @@
+<div class="searches">
+  <h2 class="searches__title">Sort movies</h2>
+  <vp-button (click)="searche('')" [value]="'to abolish'"></vp-button>
+  <vp-button (click)="searche('likes')" [value]="'by likes'"></vp-button>
+  <vp-button (click)="searche('raiting')" [value]="'by raiting'"></vp-button>
+  <input [(ngModel)]="filter" #txtFname placeholder="Searchs by name" class="btn btn--filter"/>
+</div>
+
+<div class="movies">
+  <div class="movies__list">
+    <div *ngFor="let movie of movies | mySearch: txtFname.value | mySort: sortBy" (click)="onSelectedMovie(movie)"
+        [class.selected]="movie === selectedMovie" class="movie">
+      <vp-movie-item [movie]="movie"></vp-movie-item>
+    </div>
+  </div>
+  <vp-movie-detail [movie]="selectedMovie"  class="movies__movie-detail movie-detail" ></vp-movie-detail>
+</div>

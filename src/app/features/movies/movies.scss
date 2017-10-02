@@ -1,0 +1,29 @@
+.searches {
+  text-align: center;
+}
+
+.movies{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  border: 1px solid #000;
+  margin-top: 20px;
+  &__list {
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+  &__movie-detail {
+    padding: 10px;
+    width: 30%;
+    height: 100%;
+  }
+}
+
+.movie{
+  width: 33%;
+}

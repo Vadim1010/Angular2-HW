@@ -1,0 +1,15 @@
+*.idea
+*node_modules
+
+# phpstorm project files
+.idea
+vendor
+.github
+.doctrine
+.awcache
+.editorconfig
+.gitattributes
+.gitignire
+.nvmrc
+.travis.yml
+.vscode

@@ -1,0 +1,40 @@
+@import "~angular-star-rating/assets/scss/star-rating";
+.star-svg {
+  &:active, &:link, &:visited, &:hover {
+    outline: none;
+    border: none;
+  }
+}
+
+.movie-detail{
+ display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid #000;
+  margin: 10px;
+  &__title{
+    width: 100%;
+    text-align: center;
+  }
+  &__like{
+    text-align: center;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__description{
+    text-align: center;
+    width: 80%;
+  }
+  &__rating{
+    margin-top: 5px;
+    width: 100%;
+  }
+}
+
+.description{
+  &__img{
+    max-width: 100%;
+  }
+}

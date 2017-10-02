@@ -1,0 +1,13 @@
+<div *ngIf="movie" class="movie-detail">
+<h3 class="movie-detail__title">{{movie.title}}</h3>
+  <div class="movie-detail__like">
+      <vp-likes (like)="onLike()" (dislike)="onDislike()" [likes]="movie.likes"></vp-likes>
+    </div>
+  <div class="movie-detail__description description">
+      <img src="{{movie.posterUrl}}" alt="movie.title"  class="description__img">
+    </div>
+  <div class="movie-detail__rating">
+    <star-rating-comp (onClick)="changeStar($event, movie.id)" [size]="'large'" [starType]="'svg'" [rating]="movie.stars"></star-rating-comp>
+  </div>
+</div>
+
